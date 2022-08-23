@@ -18,20 +18,32 @@ function disply(playerList){
    
 }
 
+function arrayContains(array, playerName) {
+    for (let i = 0; i < array.length; i++) {
+        if(array[i].playerName == playerName) {
+            return true;
+        }
+    }
+    return false;  
+}
+
 function selectV(element){
     const playerName = element.parentNode.parentNode.children[0].innerText ;
     const playerObj = {
         playerName: playerName
     }
 
-    if (cardArray.length < 5){
+    if (cardArray.length == 5) {
+        alert('you can select only five player');
+        return;
+    }
+
+    if (arrayContains(cardArray, playerName) == false) {
+        // insert
         cardArray.push(playerObj);
 
         element.disable = true;
         element.style.background = "grey";
-    }
-    else{
-        alert('you can select only five player')
     }
     disply(cardArray);
 }
