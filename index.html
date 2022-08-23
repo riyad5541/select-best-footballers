@@ -17,6 +17,132 @@
       <p class="text-white text-2xl ">You can select well known football player with their price and also manager. You can calculate your expenses easily.</p>
    </header>
 <!-- header section ends -->
+
+<!-- main section start -->
+
+<main>
+    <section class="container mx-auto mt-10">
+        <div class="flex flex-row">
+            <div class="grid grid-cols-3 gap-4 ml-12">
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <img src="images/messi.jog.jpg" class="w-full h-80"alt="messi" />
+                    <div class="card-body items-center text-center bg-black text-white">
+                      <h2 class="card-title">Lionel Messi</h2>
+                      <p>36 Goals . 120 Assist</p>
+                      <div class="card-actions">
+                        <button id="btn-disable" class="btn btn-primary" onclick="selectV(this)">SELECT</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <img src="images/ronaldo.jpg" class="w-full h-80"alt="ronaldo" />
+                    <div class="card-body items-center text-center bg-black text-white">
+                      <h2 class="card-title">Ronaldo</h2>
+                      <p>30 Goals . 110 Assist</p>
+                      <div class="card-actions">
+                        <button id="btn-disable-ro" class="btn btn-primary" onclick="selectV(this)">SELECT</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <img src="images/naymer.jpg" class="w-full h-80"alt="naymer" />
+                    <div class="card-body items-center text-center bg-black text-white">
+                      <h2 class="card-title">Naymer</h2>
+                      <p>26 Goals . 100 Assist</p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary"onclick="selectV(this)">SELECT</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <img src="images/dybala.jpg" class="w-full h-80"alt="dybala" />
+                    <div class="card-body items-center text-center bg-black text-white">
+                      <h2 class="card-title">Dybala</h2>
+                      <p>20 Goals . 90 Assist</p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary"onclick="selectV(this)">SELECT</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <img src="images/dembale.jpg" class="w-full h-80" alt="dembale" />
+                    <div class="card-body items-center text-center bg-black text-white">
+                      <h2 class="card-title">Dembele</h2>
+                      <p>20 Goals . 80 Assist</p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary"onclick="selectV(this)">SELECT</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <img src="images/holand.jpg" class="w-full h-80"alt="holand" />
+                    <div class="card-body items-center text-center bg-black text-white">
+                      <h2 class="card-title">Holand</h2>
+                      <p>16 Goals . 50 Assist</p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary"onclick="selectV(this)">SELECT</button>
+                      </div>
+                    </div>
+                  </div>
+                
+                
+              </div>
+            <!-- ... -->
+            <div class="mx-10 grid gap-4 grid-cols-1 grid-rows-2">
+                <div class="card w-full bg-base-100 shadow-xl">
+                    
+                    <div class="card-body items-center text-center bg-black text-white">
+                      <h2 class="card-title text-lg">Selected - V</h2>
+                      <div class="card-actions">
+                        <table>
+                            <tbody id="player-table-list">
+                                <!-- <tr>
+                                    <ul>
+                                      <li>
+                                        
+                                      </li>
+                                    </ul>
+                                </tr> -->
+
+                            </tbody>
+                        </table>
+                      </div>
+                    </div>
+                </div>
+                <div class="card w-full bg-base-100 shadow-xl ">
+                    <div class="card-body text-center bg-black text-white">
+                      <h2 class="card-title text-xl mb-5">Budget</h2>
+                      <div class="flex w-full">
+                        <p class="pr-2">Per Player</p>
+                        <input id="input-price" class="bg-black border-solid border-slate-400 w-full border-2" type="text">
+                      </div>
+                      <div class="card-actions mt-5">
+                         <button id="calculate" class="btn btn-primary mb-5 ">calculate</button>
+                      </div>
+                        <p class="block">Player Expenses  $<span id="player-expenses">00</span></p>
+                        <div class="flex w-full mt-5">
+                            <p class="pr-2">Manager</p>
+                            <input id="manager-input" class="bg-black border-solid border-slate-400 w-full border-2" type="text">
+                        </div>
+                        <div class="flex w-full mt-5">
+                            <p class="pr-2">Coach</p>
+                            <input id="coach-input" class="bg-black border-solid border-slate-400 w-full border-2" type="text">
+                        </div>
+                        <div class="card-actions mt-5">
+                            <button id="calculate-total" class="btn btn-primary mb-5 mr-12">calculate Total</button>
+                        </div>
+                        <p class="block">Total <span class="text-orange-600 ml-5">$</span> <span id="total-cost" class="text-orange-600">00</span></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+                
+            </div>
+          </div>
+    </section>
+</main>
+
+<!-- main section ends -->
 <script src="js/select.js"></script>
 </body>>
 </html>
