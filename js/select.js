@@ -42,7 +42,7 @@ document.getElementById('calculate').addEventListener('click',function(){
    const newCalculationAmount = parseFloat(calculateAmmountString);
    
 
-   const playerExpenses = newCalculationAmount * 5;
+   const playerExpenses = newCalculationAmount * cardArray.length;
 
    const findPlayerExpenses = document.getElementById('player-expenses');
    const previousPlayerExpensesString = findPlayerExpenses.innerText; 
